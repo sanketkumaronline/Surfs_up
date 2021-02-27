@@ -36,16 +36,12 @@ This is evident from evident from the fact that Mean and Median (50th Percentile
 
 Given below is the query to find summary statistic of precipitation for June
 
-`prcp_june = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
-
-june_prcp_df = pd.DataFrame(list(np.ravel(prcp_june)), columns=['June Precipitation'])
-
-june_prcp_df.describe()`
+    prcp_june = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+    june_prcp_df = pd.DataFrame(list(np.ravel(prcp_june)), columns=['June Precipitation'])
+    june_prcp_df.describe()
 
 Given below is the query to find summary statistic of precipitation for December
 
-`prcp_dec = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
-
-dec_prcp_df = pd.DataFrame(list(np.ravel(prcp_dec)), columns=['December Precipitation'])
-
-dec_prcp_df.describe()`
+    prcp_dec = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+    dec_prcp_df = pd.DataFrame(list(np.ravel(prcp_dec)), columns=['December Precipitation'])
+    dec_prcp_df.describe()
