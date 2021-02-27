@@ -4,7 +4,7 @@
 
 While on vacation to Hawaii last year, i became passionate about surfing. I decided to open a surf and ice cream shop so that i can live there forever. In order to secure investment for the plan, i met an investor W. Avy. He is really interested in the plan but concerned about weather as one of his early investments in a surf shop failed because of bad weather. He has asked me to run an analytics on the weather dataset he has for island of Oahu.    
 
-He liked the analysis i did on the weather earlier, but he wants more information about temperature trends. In particular, he likes to analysis of temperature data for month of June and December.  
+He liked the analysis i did on the weather earlier, but he wants more information about temperature trends. In particular, he would like an analysis for temperature data for month of June and December.  
 
 ## Results
 
