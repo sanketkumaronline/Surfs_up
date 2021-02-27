@@ -7,15 +7,16 @@ While on vacation to Hawaii last year, i became passionate about surfing. I deci
 He liked the analysis i did on the weather earlier, but he wants more information about temperature trends. In particular, he would like an analysis for temperature data for month of June and December.  
 
 Resources: hawaii.sqlite
+
 Software: Jupyter Notebook, SQLite
 
 ## Results
 
-**Summary Statistics for June Temperatures**
+**Summary Statistics for June Temperatures:**
 
 ![june_temps](./Images/june_temps.png)
 
-**Summary Statistics for December Temperatures**
+**Summary Statistics for December Temperatures:**
 
 ![dec_temps](./Images/dec_temps.png)
 
