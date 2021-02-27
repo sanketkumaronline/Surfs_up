@@ -22,6 +22,30 @@ He liked the analysis i did on the weather earlier, but he wants more informatio
 
 2. The minimum temperature for June is 64, whereas the minimum temperature for December is 56. However, there is not much difference in maximum temperature and mean for June and December. This shows than even though Oahu has tropical hot climate, there are occasionally days with mild temperature in December.
 
-3. The difference between 25th and 75th percentile is 4 for June and 5 for December. It shows that the temperature does not vary much for majority of June and December. Therefore, it can be said that temperature remains stable for most of these two months.
+3. The difference between 25th and 75th percentile is 4 degrees for June and 5 degrees for December. It shows that the temperature does not vary much for majority of June and December. Therefore, it can be said that temperature remains stable for most of these two months.
 
 ## Summary
+
+### Overview
+
+Overall, it seems that temperature is stable in Oahu throughout the year. It occasionally gets too hot or mildly cold, but most of the days there is not much variation in temperature. Therefore, it is a good place to surf, and set up a surf and ice cream shop.
+
+This is evident from evident from the fact that Mean and Median (50th Percentile) values are almost the same for June and December. Also, the differences between 25th and 75th percentile are 4-5 degrees for both the months. 
+
+### Additional Queries
+
+Given below is the query to find summary statistic of precipitation for June
+
+`prcp_june = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+
+june_prcp_df = pd.DataFrame(list(np.ravel(prcp_june)), columns=['June Precipitation'])
+
+june_prcp_df.describe()`
+
+Given below is the query to find summary statistic of precipitation for December
+
+`prcp_dec = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+
+dec_prcp_df = pd.DataFrame(list(np.ravel(prcp_dec)), columns=['December Precipitation'])
+
+dec_prcp_df.describe()`
